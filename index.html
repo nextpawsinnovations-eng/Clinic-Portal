@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Next Paws Innovations — Portal Selection</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:15px;-webkit-font-smoothing:antialiased}
+body{font-family:'DM Sans',system-ui,sans-serif;color:#0D1F35;min-height:100vh;overflow-x:hidden}
+:root{
+  --navy:#0B1E3A;--navy-2:#122848;--navy-3:#1A3460;
+  --blue:#1558C0;--blue-l:#1E6EE8;
+  --green:#0A9E65;--green-l:#0DB872;
+  --border:rgba(255,255,255,0.12);
+  --shadow-lg:0 4px 16px rgba(13,31,53,0.12),0 12px 40px rgba(13,31,53,0.10);
+  --radius:12px;--radius-sm:8px;--radius-lg:16px;
+}
+body{background:var(--navy);position:relative}
+body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellipse 700px 600px at 15% 15%,rgba(30,110,232,0.16) 0%,transparent 65%),radial-gradient(ellipse 700px 600px at 85% 85%,rgba(13,184,114,0.12) 0%,transparent 65%);pointer-events:none}
+.wrap{position:relative;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:60px 24px;gap:44px}
+.brand{display:flex;align-items:center;gap:14px}
+.brand-mark{width:52px;height:52px;background:#fff;border-radius:13px;display:flex;align-items:center;justify-content:center;flex-shrink:0;overflow:hidden;padding:4px;box-shadow:var(--shadow-lg)}
+.brand-mark img{width:100%;height:100%;object-fit:contain;display:block}
+.brand-name{font-size:19px;font-weight:600;color:#fff;letter-spacing:-0.3px}
+.brand-sub{font-size:11px;color:rgba(255,255,255,0.45);margin-top:2px;text-transform:uppercase;letter-spacing:0.5px}
+h1{font-size:34px;font-weight:600;color:#fff;letter-spacing:-0.7px;text-align:center}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:22px;width:100%;max-width:920px}
+@media(max-width:760px){.cards{grid-template-columns:1fr}}
+.card{background:rgba(255,255,255,0.04);border:1px solid var(--border);border-radius:var(--radius-lg);padding:28px;display:flex;flex-direction:column;min-height:260px;transition:border-color 0.18s,background 0.18s}
+.card:hover{border-color:rgba(255,255,255,0.24);background:rgba(255,255,255,0.06)}
+.card-icon{width:52px;height:52px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:18px}
+.card-icon.green{background:rgba(13,184,114,0.18)}
+.card-icon.blue{background:rgba(30,110,232,0.18)}
+.card-title{font-size:19px;font-weight:600;color:#fff;letter-spacing:-0.3px;margin-bottom:8px}
+.card-desc{font-size:13px;color:rgba(255,255,255,0.55);line-height:1.6;flex:1}
+.card-desc a{color:rgba(255,255,255,0.8)}
+.demo{background:rgba(0,0,0,0.22);border-radius:var(--radius-sm);padding:11px 14px;margin:18px 0 16px}
+.demo-lbl{font-size:10px;font-weight:600;color:rgba(255,255,255,0.4);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:3px}
+.demo-val{font-size:12.5px;color:rgba(255,255,255,0.75);font-family:'DM Mono',ui-monospace,monospace}
+.card-cta{font-size:14px;font-weight:600;display:inline-flex;align-items:center;gap:6px;text-decoration:none}
+.card-cta.green{color:var(--green-l)}
+.card-cta.blue{color:var(--blue-l)}
+.card-cta:hover{gap:9px}
+.foot{max-width:640px;text-align:center;font-size:12.5px;line-height:1.7;color:rgba(255,255,255,0.4)}
+.foot strong{color:rgba(255,255,255,0.6)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand">
+    <div class="brand-mark"><img src="uploads/nextpaws-logo.png" alt="Next Paws Innovations"/></div>
+    <div>
+      <div class="brand-name">Next Paws Innovations</div>
+      <div class="brand-sub">Victorian Animal Biobank</div>
+    </div>
+  </div>
+  <h1>Choose your portal</h1>
+  <div class="cards">
+    <div class="card">
+      <div class="card-icon green">📊</div>
+      <div class="card-title">Next Paws Biobank</div>
+      <div class="card-desc">Internal staff dashboard — donor profiles, blood inventory, blood drives, experiment log, and clinic order management.</div>
+      <div class="demo">
+        <div class="demo-lbl">Demo login</div>
+        <div class="demo-val">admin@nextpaws.com.au · npaws2025</div>
+      </div>
+      <a class="card-cta green" href="Admin%20Dashboard.html">Open dashboard →</a>
+    </div>
+    <div class="card">
+      <div class="card-icon blue">🏥</div>
+      <div class="card-title">Clinic Portal</div>
+      <div class="card-desc">For approved partner clinics that have an account. If you don't have one, please email <a href="mailto:nextpawsinnovations@gmail.com">nextpawsinnovations@gmail.com</a> to start.</div>
+      <div class="demo">
+        <div class="demo-lbl">Demo login</div>
+        <div class="demo-val">admin@maec.com.au · clinic2025</div>
+      </div>
+      <a class="card-cta blue" href="Clinic%20Portal.html">Open portal →</a>
+    </div>
+  </div>
+  <p class="foot">The two portals share live data through the ArkBio API — add a partner or update stock in the dashboard and it appears in the clinic portal automatically. <strong>Approved clinics are created in the admin dashboard</strong> under Partners &amp; clinics.</p>
+</div>
+</body>
+</html>
